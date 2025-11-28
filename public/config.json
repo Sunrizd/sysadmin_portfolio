@@ -1,0 +1,73 @@
+{
+    "name": "Adam Canva",
+    "theme": "catppuccin",
+    "email": "admin@sunrizd.net",
+    "social": {
+        "github": "https://github.com/Sunrizd",
+        "linkedin": "https://www.linkedin.com/in/adam-canva/"
+    },
+    "cvPath": "/cv.pdf",
+    "copyrightYear": "2025",
+    "skills": [
+        {
+            "title_fr": "Virtualisation & Conteneurs",
+            "title_en": "Virtualization & Containers",
+            "items": [
+                "Proxmox VE",
+                "Docker / Docker Compose",
+                "Conteneurs LXC"
+            ]
+        },
+        {
+            "title_fr": "Réseau",
+            "title_en": "Networking",
+            "items": [
+                "Cisco",
+                "VLANs / Sous-réseaux",
+                "Pare-feu (pfSense)",
+                "VPN (WireGuard, OpenVPN)"
+            ]
+        },
+        {
+            "title_fr": "Systèmes & Outils",
+            "title_en": "Systems & Tools",
+            "items": [
+                "Linux (Debian)",
+                "Scripting Bash / Python",
+                "Monitoring (Grafana, Prometheus)"
+            ]
+        }
+    ],
+    "formations": [
+        {
+            "text_fr": "Titre Professionnel Administrateur Systèmes et Réseaux (Niveau Bac+2) - O'Clock",
+            "text_en": "Professional Title System and Network Administrator (Associate Degree) - O'Clock"
+        }
+    ],
+    "projects": [
+        {
+            "icon": "📁",
+            "title_fr": "Homelab",
+            "title_en": "HomeLab",
+            "description_fr": "Cluster Proxmox haute disponibilité hébergeant plus de 20 conteneurs Docker incluant Immich, Nginx Reverse Proxy, Nextcloud, Home Assistant, Pi-hole et plus.",
+            "description_en": "High-availability Proxmox cluster hosting 20+ Docker containers including Immich, Nginx Reverse Proxy, Nextcloud, Home Assistant, Pi-hole and more.",
+            "tags": [
+                "#Proxmox",
+                "#Docker",
+                "#SelfHosting"
+            ]
+        },
+        {
+            "icon": "📁",
+            "title_fr": "Passerelle VPN",
+            "title_en": "VPN Gateway",
+            "description_fr": "Déploiement d'une passerelle VPN WireGuard sécurisée pour l'accès à distance aux ressources internes.",
+            "description_en": "Deployed a secure WireGuard VPN gateway for remote access to internal resources.",
+            "tags": [
+                "#WireGuard",
+                "#Security",
+                "#Linux"
+            ]
+        }
+    ]
+}

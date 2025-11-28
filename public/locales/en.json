@@ -1,0 +1,39 @@
+{
+    "nav": {
+        "about": "./about",
+        "skills": "./skills",
+        "projects": "./projects",
+        "contact": "./contact",
+        "langSwitch": "[FR]",
+        "langTarget": "fr"
+    },
+    "hero": {
+        "prompt": "Initialize system...",
+        "subtitle": "System Administrator | Network Engineer | Homelab Enthusiast",
+        "ctaPrimary": "View Logs",
+        "ctaSecondary": "Ping Me"
+    },
+    "about": {
+        "title": "> whoami",
+        "content": "I'm <strong>Adam Canva</strong>, a dedicated Network and System Administrator with a passion for secure, reliable, and scalable infrastructure. I spend my free time architecting my homelab, experimenting with virtualization, and self-hosting open source services."
+    },
+    "skills": {
+        "title": "> list --skills"
+    },
+    "education": {
+        "title": "> list --education"
+    },
+    "projects": {
+        "title": "> cat projects.txt"
+    },
+    "contact": {
+        "title": "> ping host",
+        "text": "Available for freelance work and full-time opportunities.",
+        "downloadCv": "Download CV"
+    },
+    "footer": {
+        "status": "System Status:",
+        "statusText": "ONLINE",
+        "copyright": "All rights reserved."
+    }
+}

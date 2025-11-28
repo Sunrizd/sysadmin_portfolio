@@ -1,0 +1,39 @@
+{
+    "nav": {
+        "about": "./a_propos",
+        "skills": "./competences",
+        "projects": "./projets",
+        "contact": "./contact",
+        "langSwitch": "[EN]",
+        "langTarget": "en"
+    },
+    "hero": {
+        "prompt": "Initialisation du système...",
+        "subtitle": "Administrateur Système | Ingénieur Réseau | Passionné de Homelab",
+        "ctaPrimary": "Voir les Logs",
+        "ctaSecondary": "Me Pinger"
+    },
+    "about": {
+        "title": "> whoami",
+        "content": "Je m'appelle <strong>Adam Canva</strong>. Je suis un Administrateur Réseau et Système dédié, passionné par les infrastructures sécurisées, fiables et évolutives. Je passe mon temps libre à architecturer mon homelab, à expérimenter la virtualisation et à auto-héberger des services open source."
+    },
+    "skills": {
+        "title": "> list --skills"
+    },
+    "education": {
+        "title": "> list --formations"
+    },
+    "projects": {
+        "title": "> cat projects.txt"
+    },
+    "contact": {
+        "title": "> ping host",
+        "text": "Disponible pour des missions freelance et des opportunités à temps plein.",
+        "downloadCv": "Télécharger mon CV"
+    },
+    "footer": {
+        "status": "État du Système:",
+        "statusText": "ONLINE",
+        "copyright": "Tous droits réservés."
+    }
+}
