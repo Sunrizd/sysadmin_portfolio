@@ -15,27 +15,6 @@ Installez les dépendances du projet :
 npm install
 ```
 
-## Initialisation du Dépôt
-
-Pour versionner ce projet avec Git et l'envoyer sur GitHub :
-
-```bash
-# 1. Initialiser git
-git init
-
-# 2. Ajouter les fichiers
-git add .
-
-# 3. Premier commit
-git commit -m "Initial commit"
-
-# 4. Lier à votre dépôt GitHub (remplacez l'URL)
-git remote add origin https://github.com/VOTRE_USER/VOTRE_REPO.git
-
-# 5. Envoyer sur GitHub
-git push -u origin main
-```
-
 ## Développement Local
 
 Pour lancer le serveur de développement avec rechargement automatique :

@@ -57,8 +57,10 @@ async function render() {
     app.innerHTML = renderTemplate(t, config, currentLang);
     
     // Apply Theme
-    if (config.theme) {
-        applyTheme(config.theme);
+    const savedTheme = localStorage.getItem('theme');
+    const themeToApply = savedTheme || config.theme;
+    if (themeToApply) {
+        applyTheme(themeToApply);
     }
 
     // Update HTML lang attribute
@@ -86,10 +88,13 @@ function attachListeners() {
     const themeSelect = document.getElementById('theme-select');
     if (themeSelect) {
         // Set initial value
-        themeSelect.value = globalConfig.theme || 'default';
+        const savedTheme = localStorage.getItem('theme');
+        themeSelect.value = savedTheme || globalConfig.theme || 'default';
         
         themeSelect.addEventListener('change', (e) => {
-            applyTheme(e.target.value);
+            const newTheme = e.target.value;
+            applyTheme(newTheme);
+            localStorage.setItem('theme', newTheme);
             e.target.blur();
         });
     }
