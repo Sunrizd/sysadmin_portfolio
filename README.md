@@ -1,4 +1,4 @@
-# Portfolio SysAdmin - Adam Canva
+# Portfolio SysAdmin
 
 Ce projet est un portfolio moderne pour Administrateur Système, construit avec HTML, CSS, JavaScript et **Vite**.
 
@@ -75,12 +75,13 @@ scp -r dist/* user@votre-serveur:/var/www/html/
 ```
 dist/
 ├── assets/         # Fichiers CSS et JS minifiés et hashés
-├── index.html      # Point d'entrée (Version Anglaise)
-└── index_fr.html   # Version Française
+├── favicon.svg     # Favicon
+└── index.html      # Point d'entrée unique
 ```
 
 ## Personnalisation
 
-- **Contenu** : Modifiez les fichiers dans `src/content/en.js` et `src/content/fr.js`.
+- **Configuration** : Modifiez `public/config.json` (Données personnelles, Projets, Compétences, Thème).
+- **Textes** : Modifiez `public/locales/fr.json` et `en.json`.
 - **Styles** : Modifiez `src/style.css`.
 - **Logique** : Modifiez `src/main.js`.
