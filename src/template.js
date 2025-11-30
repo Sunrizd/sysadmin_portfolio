@@ -2,6 +2,7 @@ export function renderTemplate(t, config, currentLang) {
     const langSuffix = currentLang === 'fr' ? '_fr' : '_en';
 
     return `
+    <canvas id="bg-canvas"></canvas>
     <header>
         <nav class="container">
             <div class="logo">root@adam:~$ <span class="cursor">_</span></div>
@@ -10,16 +11,6 @@ export function renderTemplate(t, config, currentLang) {
                 <li><a href="#skills">${t.nav.skills}</a></li>
                 <li><a href="#projects">${t.nav.projects}</a></li>
                 <li><a href="#contact">${t.nav.contact}</a></li>
-                <li><a href="#" id="lang-toggle" data-lang="${t.nav.langTarget}">${t.nav.langSwitch}</a></li>
-                <li>
-                    <div class="select-wrapper">
-                        <select id="theme-select" aria-label="Theme">
-                            <option value="default">Default</option>
-                            <option value="dracula">Dracula</option>
-                            <option value="catppuccin">Catppuccin</option>
-                        </select>
-                    </div>
-                </li>
             </ul>
             <div class="mobile-toggle">
                 <span></span>

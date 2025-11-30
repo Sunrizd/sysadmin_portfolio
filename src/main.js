@@ -1,5 +1,6 @@
 import { renderTemplate } from './template.js';
 import { applyTheme } from './themes.js';
+import { initParticles } from './particles.js';
 
 // State
 let currentLang = 'fr'; // Default to French
@@ -68,36 +69,14 @@ async function render() {
 
     // Attach Event Listeners
     attachListeners();
+
+    // Init Particles
+    initParticles();
 }
 
-async function toggleLanguage(e) {
-    e.preventDefault();
-    currentLang = currentLang === 'fr' ? 'en' : 'fr';
-    await loadLocale(currentLang);
-    render();
-}
 
 function attachListeners() {
-    // Language Toggle
-    const langToggle = document.getElementById('lang-toggle');
-    if (langToggle) {
-        langToggle.addEventListener('click', toggleLanguage);
-    }
 
-    // Theme Switcher
-    const themeSelect = document.getElementById('theme-select');
-    if (themeSelect) {
-        // Set initial value
-        const savedTheme = localStorage.getItem('theme');
-        themeSelect.value = savedTheme || globalConfig.theme || 'default';
-        
-        themeSelect.addEventListener('change', (e) => {
-            const newTheme = e.target.value;
-            applyTheme(newTheme);
-            localStorage.setItem('theme', newTheme);
-            e.target.blur();
-        });
-    }
 
     // Typing Effect
     const glitchText = document.querySelector('.glitch');
